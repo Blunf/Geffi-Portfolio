@@ -1,0 +1,164 @@
+/* 기본 다크 모드 스타일 */
+body {
+    font-family: 'font', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* 폰트 등록 */
+@font-face {
+    font-family: 'font';
+    src: url('Hakgyoansim Chilpanjiugae TTF B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+    .article_name h1 {
+        font-size: 1.5rem;
+    }
+    .article_date {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+/* -----------------------------헤더 -----------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: black;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    z-index: 1000;
+}
+
+/* 버튼 스타일 */
+.home-button,
+.github-button,
+.instagram-button {
+    display: flex;
+    align-items: center;
+}
+
+.home-button {
+    margin-left: 3px;
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 10px; /* 깃허브와 인스타 사이 간격 */
+}
+
+/* 각 버튼 스타일 (기존 유지) */
+.github-button,
+.instagram-button {
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    width: 27px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* 아이콘 스타일도 그대로 유지 */
+.instagram-icon,
+.github-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.home-icon:hover,
+.instagram-icon:hover,
+.github-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ------------------- 기사 제목 부분 -------------------------------*/
+.article_name {
+    text-align: center;
+    margin-top: 70px; /* 헤더 공간 확보 */
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+/* 제목 */
+.article_name h1 {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+}
+
+/* 날짜 */
+.article_date {
+    font-size: 1rem;
+    color: gray;
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* --------------------------- 본문 --------------------------------*/
+.content {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    letter-spacing: 1.5px;
+    padding: 0 10px;
+}
+
+/* 줄 바꿈 유지 */
+.preserve-text {
+    white-space: pre-line;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------하단 ------------------*/
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 1000px;
+    padding: 20px 0;
+}
