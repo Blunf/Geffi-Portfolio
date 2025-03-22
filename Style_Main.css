@@ -138,12 +138,29 @@ header {
 
 
 
-
-/* ---------------------------------하단 ------------------*/
+/* ---------------------------------하단 -----------------------*/
 .footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: gray;
+    position: relative;            /* 자식 요소의 절대 위치 기준 */
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto 0 auto;       /* 가운데 정렬 */
+    padding: 20px 10px;
     margin-top: 1000px;
-    padding: 20px 0;
-}
+    
+    font-size: 0.9rem;
+    color: rgb(97, 97, 97);
+  }
+  
+  .secret-button {
+    display: inline-block;
+    /* 버튼은 특별한 위치 설정 없이 문서 흐름에 따라 왼쪽에 위치 */
+  }
+  
+  .footer-text {
+    position: absolute;            /* 절대 위치 지정 */
+    left: 50%;                     /* 부모의 중앙 */
+    transform: translateX(-50%);   /* 중앙 정렬 보정 */
+    margin: 0;
+    white-space: nowrap;           /* 텍스트가 한 줄로 유지되도록 */
+  }
+  

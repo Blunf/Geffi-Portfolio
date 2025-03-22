@@ -144,6 +144,22 @@ header {
     white-space: pre-line;
 }
 
+.secretgallery {
+    width: 100%;
+    max-width: 700px;  /* 최대 너비 제한 (PC) */
+    margin: auto;      /* 가운데 정렬 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+    gap: 10px;
+    
+}
+  
+/* 갤러리 이미지 스타일 */
+.secretgallery img {
+    width: 100%;       /* 그리드 셀의 너비에 맞게 */
+    height: auto;      /* 원본 비율 유지 */
+    object-fit: cover; /* 셀을 꽉 채우도록 (필요에 따라 변경) */
+}
 
 
 
