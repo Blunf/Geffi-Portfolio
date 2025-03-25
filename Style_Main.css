@@ -41,6 +41,7 @@ header {
     width: 100%;
     max-width: 700px;
     z-index: 1000;
+    border-bottom: 1px solid #ffffff; /* 구분선 추가 */
 }
 
 /* 버튼 스타일 */
@@ -101,13 +102,17 @@ header {
     margin: auto;
     text-align: left;
     letter-spacing: 1.5px;
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 100px;
 }
 
-/* 제목 */
-.content h1 {
+
+
+.content-title {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.content-hi {
     font-size: 2rem;
     margin-bottom: 10px;
 }
