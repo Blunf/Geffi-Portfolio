@@ -1,0 +1,4 @@
+# 폰트 파일 제외
+H_NanumGothic.otf
+nanum-gothic/
+.DS_Store 
