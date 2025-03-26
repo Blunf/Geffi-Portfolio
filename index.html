@@ -10,29 +10,46 @@
 <body>
 
     <header>
-        <a href="index.html" target="_self" class="home-button">
-            <img src="icon\Icon_cinnamoroll.svg" alt="홈" class="home-icon">
-        </a>
+        <div class="header-left">
+            <span id="current-date"></span>
+        </div>
+        
+        <div class="header-center">
+            <h1 class="header-title">Geffi</h1>
+        </div>
 
-
-        <div class="right-buttons">
+        <div class="header-right">
             <a href="https://github.com/Blunf" target="_blank" class="github-button">
                 <img src="icon/Icon_Github.svg" alt="깃허브" class="github-icon">
             </a>
             <a href="https://www.instagram.com/geffi._" target="_blank" class="instagram-button">
                 <img src="icon/Icon_Instagram.svg" alt="인스타그램" class="instagram-icon">
             </a>
-          </div>
-
+        </div>
     </header>
 
+    <script>
+        // 날짜 업데이트 함수
+        function updateDate() {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            const dateString = now.toLocaleDateString('ko-KR', options);
+            document.getElementById('current-date').textContent = dateString;
+        }
 
-    <div class="content">
-        <h1 class="content-title">Geffi </h1>
-        <p class="content-hi">:: hello ::</p>
-        <a href="MJ_LearnDiscoard.html" class="Article_button">☁️ 디스코드 알아보기</a>
-        <a href="MJ_AI_makes_developer_stupid.html" class="Article_button">☁️ AI가 개발자를 멍청하게 만든다?</a>
-        <a href="MJ_NextJournal.html" class="Article_button">☁️ 출시 예정</a>
+        // 페이지 로드 시 날짜 업데이트
+        updateDate();
+    </script>
+
+    <div class="Main">
+        <h1 class="Main_title">Geffi </h1>
+
+        <div class="BlogSelection">
+            <p class="BlogSelection_title">Blog</p>
+            <a href="MJ_LearnDiscoard.html" class="Article_button">☁️ 디스코드 알아보기</a>
+            <a href="MJ_AI_makes_developer_stupid.html" class="Article_button">☁️ AI가 개발자를 멍청하게 만든다?</a>
+            <a href="MJ_NextJournal.html" class="Article_button">☁️ 출시 예정</a>
+        </div>
     </div>
     
 

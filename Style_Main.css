@@ -41,11 +41,35 @@ header {
     width: 100%;
     max-width: 700px;
     z-index: 1000;
-    border-bottom: 1px solid #ffffff; /* 구분선 추가 */
+    border-bottom: 1px solid #ffffff;
 }
 
-/* 버튼 스타일 */
-.home-button,
+.header-left {
+    flex: 1;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* 기존 버튼 스타일 수정 */
 .github-button,
 .instagram-button {
     display: flex;
@@ -61,13 +85,6 @@ header {
     align-items: center;
     margin-right: 10px;
     gap: 10px; /* 깃허브와 인스타 사이 간격 */
-}
-
-/* 각 버튼 스타일 (기존 유지) */
-.github-button,
-.instagram-button {
-    display: flex;
-    align-items: center;
 }
 
 .home-icon {
@@ -96,7 +113,7 @@ header {
 
 
 /* ----------------------------본문 ----------------------------------- */
-.content {
+.Main {
     width: 100%;
     max-width: 700px;
     margin: auto;
@@ -107,14 +124,14 @@ header {
 
 
 
-.content-title {
+.Main_title {
     font-size: 4rem;
     margin-bottom: 10px;
 }
 
-.content-hi {
+.BlogSelection_title {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 /* 문장 */
@@ -128,17 +145,19 @@ header {
     display: block;
     width: 100%;
     max-width: 700px;
+    margin: 1px auto;
     padding: 5px 0px;
     background-color: #44444400;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
     text-align: left;
 }
-.Article_button a:hover {
-    color: #779cc4;
+
+.Article_button:hover {
+    color: #779cc4;  /* 호버 시 파란색으로 변경 */
 }
 
 
@@ -171,4 +190,3 @@ header {
     margin: 0;
     white-space: nowrap;           /* 텍스트가 한 줄로 유지되도록 */
   }
-  
