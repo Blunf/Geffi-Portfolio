@@ -14,7 +14,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('image/wall.jpg') no-repeat center center;
+    background: url('image/wall3.jpg') no-repeat center center;
     background-size: cover;
     filter: blur(80px);
     z-index: -1;
@@ -136,7 +136,7 @@ header {
     box-shadow: 
         0 4px 6px rgba(0, 0, 0, 0.1),  /* 외부 그림자 */
         inset 0 1px 0 rgba(255, 255, 255, 0.3);  /* 내부 하이라이트 */
-    border-radius: 30px;  /* 모든 모서리를 둥글게 */
+    border-radius: 30px 30px 30px 30px;  /* 모든 모서리를 둥글게 */
 }
 
 .header-left {
@@ -153,7 +153,7 @@ header {
 
 .header-title {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #ffffff;
 }
 
@@ -203,54 +203,69 @@ header {
     transform: scale(1.1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------본문 ----------------------------------- */
-.Main {
-    width: 100%;
-    max-width: 700px;
+
+.blogGallery {
+    padding-top: 80px; /* 헤더 높이에 맞춰 여백 추가 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
     margin: auto;
-    text-align: left;
-    letter-spacing: 1.5px;
-    padding-top: 100px;
 }
-
-.Main_title {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.BlogSelection_title {
-    font-size: 2rem;
-    margin-bottom: 2px;
-}
-
-/* 문장 */
-.content p {
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-/* 기사 버튼 */
-.Article_button {
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    margin: 1px auto;
-    padding: 5px 0px;
-    background-color: #44444400;
+  
+  .galleryItem {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: color 0.3s;
     text-align: left;
-}
-
-.Article_button:hover {
-    color: #779cc4;  /* 호버 시 파란색으로 변경 */
-}
-
-
-
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    border-radius: 30px 30px 30px 30px; 
+  }
+  
+  .galleryItem:hover {
+    transform: scale(1.02);
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .galleryItem h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .galleryItem p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
 
 
 
@@ -269,11 +284,12 @@ header {
     margin-top: 1000px;
     
     font-size: 0.9rem;
-    color: rgb(97, 97, 97);
+    color: rgb(231, 231, 231);
   }
   
   .secret-button {
     display: inline-block;
+    opacity: 0;
     /* 버튼은 특별한 위치 설정 없이 문서 흐름에 따라 왼쪽에 위치 */
   }
   
