@@ -15,14 +15,6 @@
 
     <header>
         <div class="header-left">
-            <span id="current-date"></span>
-        </div>
-        
-        <div class="header-center">
-            <h1 class="header-title">Geffi Blog</h1>
-        </div>
-
-        <div class="header-right">
             <a href="https://github.com/Blunf" target="_blank" class="github-button">
                 <img src="icon/Icon_Github.svg" alt="깃허브" class="github-icon">
             </a>
@@ -30,44 +22,48 @@
                 <img src="icon/Icon_Instagram.svg" alt="인스타그램" class="instagram-icon">
             </a>
         </div>
+
+
+        <div class="header-right">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="blog.html" class="nav-button">Blog</a>
+            <a href="journal.html" class="nav-button">Journal</a>
+            <a href="design.html" class="nav-button">Design</a>
+        </div>
     </header>
 
+    <div class="BlogBoard">
+        <a href="YourPage.html" class="text-box-button">
+            <img src="image/thumbnail.jpg" alt="썸네일">
+            <div class="button-text">
+              <small class="category">📁 카테고리</small>
+              <h3 class="title">제목입니다</h3>
+              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+            </div>
+          </a>
+        
+        
+        <a href="YourPage.html" class="text-box-button">
+            <img src="image/thumbnail.jpg" alt="썸네일">
+            <div class="button-text">
+              <small class="category">📁 카테고리</small>
+              <h3 class="title">제목입니다</h3>
+              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+            </div>
+          </a>
 
 
-
-    <script>
-        // 날짜 업데이트 함수
-        function updateDate() {
-            const now = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-            const dateString = now.toLocaleDateString('ko-KR', options);
-            document.getElementById('current-date').textContent = dateString;
-        }
-
-        // 페이지 로드 시 날짜 업데이트
-        updateDate();
-    </script>
-
-
-
-
-
+        <a href="YourPage.html" class="text-box-button">
+            <img src="image/thumbnail.jpg" alt="썸네일">
+            <div class="button-text">
+              <small class="category">📁 카테고리</small>
+              <h3 class="title">제목입니다</h3>
+              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+            </div>
+          </a>
+          
+    </div>
     
-    <div class="blogGallery">
-        <div class="galleryItem">
-          <img src="image1.jpg" alt="썸네일">
-          <h3>☁️ 디스코드 알아보기</h3>
-          <p>간단한 설명</p>
-        </div>
-      
-        <div class="galleryItem">
-          <img src="image2.jpg" alt="썸네일">
-          <h3>☁️ AI가 개발자를 멍청하게 만든다?</h3>
-          <p>이건 다른 설명</p>
-        </div>
-      
-        <!-- 필요한 만큼 반복 -->
-      </div>
 
 
 
@@ -79,5 +75,7 @@
         <p class="footer-text">&copy; 2025 Geffi Journal. All rights reserved.</p>
       </footer>
     
+
 </body>
+
 </html>
