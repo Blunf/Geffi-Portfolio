@@ -14,56 +14,91 @@
 <body>
 
     <header>
-        <div class="header-left">
+      <div class="header-left">
+        <h1>Geffi</h1>
+      </div>
+
+        <div class="header-right">
             <a href="https://github.com/Blunf" target="_blank" class="github-button">
                 <img src="icon/Icon_Github.svg" alt="깃허브" class="github-icon">
             </a>
-            <a href="https://www.instagram.com/geffi._" target="_blank" class="instagram-button">
+            <a href="https://www.instagram.com/geffi_kr" target="_blank" class="instagram-button">
                 <img src="icon/Icon_Instagram.svg" alt="인스타그램" class="instagram-icon">
             </a>
         </div>
 
 
-        <div class="header-right">
-            <a href="index.html" class="nav-button">Home</a>
-            <a href="blog.html" class="nav-button">Blog</a>
-            <a href="journal.html" class="nav-button">Journal</a>
-            <a href="design.html" class="nav-button">Design</a>
-        </div>
     </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="BlogBoard">
-        <a href="YourPage.html" class="text-box-button">
+        <button class="text-box-button" onclick="openModal('modal2')">
             <img src="image/thumbnail.jpg" alt="썸네일">
             <div class="button-text">
-              <small class="category">📁 카테고리</small>
-              <h3 class="title">제목입니다</h3>
-              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+                <small class="category">시사</small>
+                <h3 class="title">AI가 개발자를 멍청하게 만든다?</h3>
+                <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
             </div>
-          </a>
+        </button>
         
-        
-        <a href="YourPage.html" class="text-box-button">
-            <img src="image/thumbnail.jpg" alt="썸네일">
-            <div class="button-text">
-              <small class="category">📁 카테고리</small>
-              <h3 class="title">제목입니다</h3>
-              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+        <button class="text-box-button" onclick="openModal('modal1')">
+            <div class="button-content">
+                <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                <div class="button-text">
+                    <small class="category">비즈니스</small>
+                    <h3 class="title">디스코드 알아보기</h3>
+                    <p class="summary">이건 두 번째 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
+                </div>
             </div>
-          </a>
+        </button>
+    </div>
 
+    <!-- 모달 구조 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>모달 1 제목</h2>
+            <p>모달 1 내용입니다.</p>
+        </div>
+    </div>
 
-        <a href="YourPage.html" class="text-box-button">
-            <img src="image/thumbnail.jpg" alt="썸네일">
-            <div class="button-text">
-              <small class="category">📁 카테고리</small>
-              <h3 class="title">제목입니다</h3>
-              <p class="summary">이건 짧은 요약 텍스트입니다. 클릭해서 자세히 보기!</p>
-            </div>
-          </a>
-          
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>모달 2 제목</h2>
+            <p>모달 2 내용입니다.</p>
+        </div>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -76,6 +111,40 @@
       </footer>
     
 
+ 
+    
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// 모달 외부 클릭 시 닫기
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        closeModal('modal1');
+        closeModal('modal2');
+    }
+}
+</script>
 
 </html>
