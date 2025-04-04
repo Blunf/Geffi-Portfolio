@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geffi</title>
     <link rel="icon" href="image\Geffi_Profile_Round.png" type="image/x-icon">
-    <link rel="stylesheet" href="Style_Main.css">  <!-- CSS 연결 -->
+    <link rel="stylesheet" href="Style_index.css">  <!-- CSS 연결 -->
 </head>
 
 
@@ -42,94 +42,116 @@
 
 
 
-
-
-    <div class="HelloWord">
-        <h1>Hello</h1>
-    </div>
-
-    <!-- 메인페이지는 최근 글을 올림 :) -->
-
-    <div class="BlogBoard">
-
-        <button class="RecentItem" id="RecentItem_1" onclick="openModal('modal1')">
-
-            <div class="RecentItem_Img">
-                <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
-            </div>
-
-            <div class="RecentItem_Paragraph">
-                <small class="RecentItem_Category">비즈니스</small>
-                <h3 class="RecentItem_Title">디스코드 알아보기</h3>
-                <p class="RecentItem_Summary">
-                    이건 두 번째 요약 텍스트입니다. 클릭해서 자세히 보기!
-                </p>
-            </div>
-
-        </button>
-
-    </div>
-
-
-
-
-    <!-- 모달 구조,  이거 하나씩 아이템에 연결-->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>디스코드 알아보기</h2>
-            <p class="contentswrite">
-우리 모두에게 익숙한 디스코드는 현재 게임, 문화, 비즈니스, 교육등 수많은 분야를 위한 커뮤니티 플랫폼이지만,
-원래는 단순히 게이머를 위한 소셜 플랫폼이였다. 2015년 작은 스타트업이였던 디스코드가 어떻게 스카이프나, 
-팀스피크와 같은 경쟁사를 제치고 수억명의 사용자를 가질 정도로 성장할 수 있었을까?
-
-
-
-
-<h2>☁️디스코드의 탄생</h2>
-디스코드는 2015년 제이슨 시트론(Jason Citron), 스탠 비슈네브스키(Stan Vishnevskiy)의 공동 창업에 의해 시작되었다.
-시트론은 이전에 모바일 게임 커뮤니티 플랫폼인 오픈파인트를 창업해 성공적으로 매각했던 인물로, 자신의 게임 스튜디오인 Hammer&Chisel 을 통해 디스코드를 개발했다.
-
-그들은 팀스피크, 스카이프와 같은 VoIP 소프트웨어를 이용해 실시간 전술 게임에서 소통하기가 어렵다는 것을 알아챘다.이를 계기로 사용자 친화적이고 가벼운 채팅 서비스를 만들기로 하였고, 이렇게 태어난것이 디스코드이다. 말 그대로 게임 커뮤니티의 불협화음(Discord)를 해결하자는 의미이다.
-
-
-
-<h2>☁️디스코드의 성장</h2>
-초기 디스코드는 주로 게이머 커뮤니티를 중심으로 일어났다. 서비스 오픈 당시 레딧의 게임 게시판에서 디스코드의 편의성을 알아본 몇몇 유저가 디스코드 서버 링크를 걸기 시작하였고, 점차 많은 사람들이 사용하기 시작하였다. 이렇게 수소문이 퍼지며 출시 8개월 만에 300만 이용자를 돌파하였고, 1년후에는 1200만명의 사용자를 기록하게 된다. 
-
-당시 디스코드 1주년인 2016년에는 PC Gamer지가 "디스코드는 현존 최고의 VoIP 서비스"라고 평하였고, 라이프해커에서도 인터페이스의 편의성과 멀티플랫폼의 다양성을 호평하였다. 이러한 긍정적인 반응이 입소문을 타며 빠르게 확장하게 된다.
-
-이런 성장 속에서 2020년 코로나19 팬데믹이 발생하였다. 이 기간은 디스코드에게 있어서 새로운 전환점이 되었는데, 사회적 거리두기로 인해 사람들이 집에 머무는 시간이 늘어나자, 전 세계 사용자들은 화상과 음성으로 소통할 새로운 공간을 찾기 시작하였다. 기존에 게이머 전용 소프트웨어 이미지의 디스코드는 이러한 기회를 놓치지 않았는데, 2020년 6월 디스코드는 회사의 슬로건을 "your place to talk"로 변경하고, 게임 커뮤니티를 넘어 일상적인 대화공간으로 정체성을 수정하게 된다. 
-
-이 시기 디스코드는 학교 동아리, 아트 커뮤니티, 친구모임, 음악이나 기업의 행사, 친구들과의 방과후 숙제, 패션 등 다양한 주제의 커뮤니티가 생겨나게 되었다. 결국 이러한 방향 전환 덕분에 팬데믹 기간 디스코드의 이용자수는 폭발적으로 증가하였다. 
-
-2020년 말에는 불과 1년 사이에 두배 가까이 성장하였고, 기업 가치가 급등하게 되기도 하였다. 2021년에는 150달러 규모의 유니콘으로 성장하고, 같은 해 3월에는 마이크로소프트의 100억달러 인수 제안 등 급속도로 성장하게 된다.
-
-
-
-<h2>☁️디스코드의 차별화</h2>
-디스코드의 도입 당시 팀스피크, 스카이프 등 경쟁 플랫폼들을 제치고 급성장할 수 있었던 이유는 기능적 차별성과 사용자중심 설계가 있다. 무료로 사용할 수 있는것, 복잡한 서버 설정없이 링크 한번으로 대화를 시작할 수 있는것, 팀스피크와 달리 별도로 서버 운영을 하거나 IP 주소를 입력하는 등의 번거로움을 없앤 것 등이 있다. 특히 웹 브라우저에서도 별도의 설치 없이 즉시 사용할 수 있었고, 다양한 플랫폼에서 동일한 사용자경험을 제공한 것도 주요한 차별점이었다. 
-
-이런 접근성 덕분에 수많은 사람들이 쉽게 커뮤니티를 형성할 수 있었고, 결국 서버 단위로 대규모 커뮤니티를 구축하는데도 이점이 생기게 된다. 대화 기록이 무제한에 가깝게 보존되기 때문에, 이전 내용을 언제나 찾아볼 수 있고, 실시간 음성을 상시로 열어두는 등의 자유로운 음성 채팅방의 역할도 가능하였다. 이런 기능들은 다른 플랫폼에서 느낄 수 없는 경험이였고 마치 친구들과 함께 노는 거실과 같은 느낌을 주었기에, 사용자는 더 많은 시간을 디스코드에서 보내게 된 것이다.
-
-그 외에 빠른 피드백, 즉각적인 UI 개선, 봇기능, 화면공유 등 수많은 기능을 추가하며 경쟁 앱들을 압도하게 되었다.
-
-
-<h2>☁️최근 디스코드의 도전과 전략</h2>
-이렇게 승승장구해온 디스코드가 최근 새로운 도전과제에 직면하고 있다. 코로나 당시 서비스 규모가 급격하게 커지며 직원을 크게 늘렸던 디스코드는 효율성 저하, 비용 부담 등의 문제에 직면하게 되었다. 그 결과 2023년 8월 4%의 인력감축, 2024년 1월에는 17%의 해고를 실시하게 된다. 회사의 재무상태가 위급하지는 않지만, 영업이익을 내지 못하는 상황이다. 
-
-이러한 상황은 디스코드의 비즈니스모델의 한계에 있다. 디스코드는 사용자경험 개선을 위해 방대한 무료서비스를 시행하고 있다. 특히 사용자 경험 개선을 위해 광고를 넣지 않기에, 유일한 비즈니스 모델은 유료 구독 서비스인 니트로(Nitro)이다. 2023년 매출은 전년대비 30%가량 상승한 수치이지만, 거대한 이용자 규모에 비해 매출 전환율은 저조한 편이다. 이에 따라 디스코드는 새로운 전략을 추진하고 있다.
-니트로의 요금제를 3$ 수준으로 낮춘 니트로 베이직 요금제를 도입해 많은 사용자가 부담없이 유료기능을 사용해볼 수 있도록 하였고, 서버 운영자들이 멤버십을 판매할 수 있는 서버 구독 기능, 스티커 판매, 서버 부스트 등 수익 모델을 늘려가는 중이다. 
-특히 사용자경험을 가장 중시하는 디스코드 특성상, 플랫폼 내에 광고를 도입하지는 않았지만, 2023년 말 일부 모바일 사용자에게 서드파티 광고를 시범 운영하는 등 신중한 테스트를 하고 있다.
-
-또 최근 생성형 AI 기술을 도입해 대화 요약봇, Clyde봇 등을 추가하며 사용자경험을 향상시키고 있다. 
-이런 기능들은 디스코드를 단순한 채팅 도구가 아닌 스마트 커뮤니티 플랫폼으로 진화시키며, 이탈을 막고 사용자 참여도를 높이는 데 일조하고 있다.
-
-            </p>
+    <main>
+        <div class="HelloWord">
+            <h1>Hello</h1>
         </div>
-    </div>
+    
+    
+        <div class="BlogBoard">
 
+            <button class="RecentItem" id="RecentItem_2">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">블로그/기술</small>
+                    <h3 class="RecentItem_Title">명령줄 인터페이스는 무엇인가요?</h3>
+                    <p class="RecentItem_Summary">
+                        CLI 탐구하기
+                    </p>
+                </div>
+    
+            </button>
 
+            <button class="RecentItem" id="RecentItem_2">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">블로그/UIUX</small>
+                    <h3 class="RecentItem_Title">랜딩페이지와 폴드의 마케팅적 사고</h3>
+                    <p class="RecentItem_Summary">
+                        랜딩페이지에서 폴드이미지의 중요성에 대한 탐구
+                    </p>
+                </div>
+    
+            </button>
+
+            <button class="RecentItem" id="RecentItem_2">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">블로그/UIUX</small>
+                    <h3 class="RecentItem_Title">사용자의 행동을 데이터로 분석하기</h3>
+                    <p class="RecentItem_Summary">
+                        사용자의 행동을 분석하는 비즈니스 인텔리전스 
+                    </p>
+                </div>
+    
+            </button>
+
+            <button class="RecentItem" id="RecentItem_2">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">기사/데이터저널</small>
+                    <h3 class="RecentItem_Title">관세정책에 따른 경제분석</h3>
+                    <p class="RecentItem_Summary">
+                        2025년 트럼프행정부의 관세정책안에 따른 대한민국 경제분석
+                    </p>
+                </div>
+    
+            </button>
+
+            <button class="RecentItem" id="RecentItem_2">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">블로그/기술</small>
+                    <h3 class="RecentItem_Title">AI가 개발자를 멍청하게 만는다?</h3>
+                    <p class="RecentItem_Summary">
+                        인공지능이 개발자에 미치는 영향에 대하여
+                    </p>
+                </div>
+    
+            </button>
+    
+            <button class="RecentItem" id="RecentItem_1">
+    
+                <div class="RecentItem_Img">
+                    <img src="image/BlogThumbnail/th_discord.png" alt="썸네일" class="button-image">
+                </div>
+    
+                <div class="RecentItem_Paragraph">
+                    <small class="RecentItem_Category">블로그/비즈니스</small>
+                    <h3 class="RecentItem_Title">디스코드 알아보기</h3>
+                    <p class="RecentItem_Summary">
+                        2015년 런칭 이후 큰 성장을 이뤄낸 디스코드의 이야기에 대해 다룹니다
+                    </p>
+                </div>
+    
+            </button>
+    
+        </div>
+    
+    
+    
+    
+    </main>
 
 
 
@@ -150,7 +172,9 @@
 
     <footer class="footer">
         <a href="MySecretPage.html" class="secret-button">
-            <img src="icon\icon_Secret.svg" alt="깃허브" class="github-icon"></a>
+            <img src="icon\icon_Secret.svg">
+        </a>
+
         <p class="footer-text">&copy; 2025 Geffi Journal. All rights reserved.</p>
       </footer>
     
@@ -172,22 +196,6 @@
 
 
 
-<script>
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
 
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// 모달 외부 클릭 시 닫기
-window.onclick = function(event) {
-    if (event.target.className === 'modal') {
-        closeModal('modal1');
-        closeModal('modal2');
-    }
-}
-</script>
 
 </html>
