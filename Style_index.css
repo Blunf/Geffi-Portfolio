@@ -119,12 +119,14 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
     padding: 20px;
+    justify-items: center; /* 💡 버튼을 가운데 정렬 */
 }
 
 /* 버튼 대신 a 태그에 스타일 적용 */
 .RecentItem {
     position: relative;
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 16 / 9;  /* 16:9 비율 유지 */
     display: flex;
     flex-direction: row;
@@ -152,10 +154,12 @@ header {
 
 .RecentItem_Img img {
     width: auto;
-    height: 100%; /* 세로 높이에 맞춤 */
+    height: 100%;
+    max-width: 100%; /* 💡 가로 너비 제한 추가 */
     object-fit: cover;
     border-radius: 20px;
 }
+
 
 .RecentItem_Paragraph {
     flex: 1;
@@ -212,7 +216,32 @@ header {
   }
   
 
-
+  @media screen and (max-width: 480px) {
+    .RecentItem {
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column; /* 이미지가 위, 글이 아래로 */
+      aspect-ratio: auto; /* 비율 유지 안 함 */
+      padding: 10px;
+    }
+  
+    .RecentItem_Img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .RecentItem_Img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .RecentItem_Paragraph {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
 
 
 
