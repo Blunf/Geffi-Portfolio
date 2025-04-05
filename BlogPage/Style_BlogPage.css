@@ -120,21 +120,67 @@ main {
     transition: transform 0.2s;
 }
 
+.blog-writedate{
+    font-size: 15px;
+    color: #ccc;
+}
+
+.blog-titlebox {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 이미지와 텍스트 사이 간격 */
+    margin-bottom: 20px;
+}
+
+/* 이미지 스타일 (왼쪽) */
+.blog-thumbnail {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0; /* 작아지지 않게 고정 */
+    border-radius: 15px;
+    margin: 0;
+}
+
+/* 텍스트 박스 스타일 (오른쪽) */
+.blog-infobox {
+    flex: 1; /* 남은 공간을 채움 */
+}
+
+/* 텍스트 내부 스타일 */
+.Blog_Category {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.Blog_title {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    margin: 5px 0;
+    color: #fff;
+}
+
+
+
+
 .BlogBox:hover {
     transform: scale(1.02);
 }
 
-.blog-title {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    margin-bottom: 10px;
-}
-
-.blog-writting {
+.blog-writtingbox {
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.6;
     color: #eee;
     white-space: pre-line;
 }
+
+/* 본문 안의 h2 태그 스타일 추가 */
+.blog-writting h2 {
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
 
 * {
   box-sizing: border-box;  /* padding, border 포함해서 width 계산 */
@@ -145,7 +191,23 @@ body, html {
 }
 
 
-  
+.blog-insertedimage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
