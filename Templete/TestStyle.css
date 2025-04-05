@@ -1,0 +1,68 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Hakgyoansim Badasseugi TTF B.ttf', sans-serif; /* badasseu 글꼴 사용 */
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(124, 123, 122);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Contents {
+    white-space: pre-wrap; /* 줄바꿈과 공백을 유지 */
+    width: 500px;
+}
+
+
+
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.2); /* 헤더 배경색 */
+    padding: 10px;
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center; /* 중앙 정렬 */
+}

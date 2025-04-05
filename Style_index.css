@@ -54,6 +54,7 @@ header {
         0 4px 6px rgba(0, 0, 0, 0.1),  /* 외부 그림자 */
         inset 0 1px 0 rgba(255, 255, 255, 0.3);  /* 내부 하이라이트 */
     border-radius: 30px 30px 30px 30px;  /* 모든 모서리를 둥글게 */
+    transition: top 0.3s ease-in-out;
 }
 
 .header-left{
@@ -77,6 +78,19 @@ header {
 }
 
 
+.home-buton {
+    text-decoration: none; /* 밑줄 제거 */
+    color: white;          /* 글자 색상 */
+    font-size: 1.6rem;     /* 글자 크기 */
+    font-weight: bold;     /* 굵기 */
+}
+.home-buton:hover {
+    color: #c2cfdd;        /* 마우스 오버 시 색상 변경 */
+}
+
+
+
+
 
 
 
@@ -96,60 +110,90 @@ header {
 
 /* ----------------------------본문 ----------------------------------- */
 .HelloWord{
-    margin-top: 200px;
+    margin-top: 250px;
     font-size: 60px;
 }
 
 .BlogBoard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
     padding: 20px;
 }
 
+/* 버튼 대신 a 태그에 스타일 적용 */
 .RecentItem {
-    display: block; /* 플렉스 제거 */
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;  /* 16:9 비율 유지 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    padding: 15px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 100%;
+    padding: 10px;
+    overflow: hidden;
     transition: transform 0.2s;
+    text-decoration: none;       /* 링크 밑줄 제거 */
+    color: inherit;              /* 텍스트 색상 유지 */
+    cursor: pointer;
 }
+
+
+.RecentItem_Img {
+    flex: 1;
+    height: 100%; /* 버튼 높이에 맞춤 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecentItem_Img img {
+    width: auto;
+    height: 100%; /* 세로 높이에 맞춤 */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.RecentItem_Paragraph {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
 .RecentItem:hover {
     transform: scale(1.01);
 }
 
-.RecentItem_Img img {
-    width: 100%;           /* 부모 너비에 맞게 */
-    height: auto;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.RecentItem_Paragraph {
-    text-align: left;
-}
-
 .RecentItem_Category {
-    font-size: 0.8rem;
+    font-size: clamp(0.6rem, 1vw, 0.9rem);
     color: #ccc;
 }
 
-.RecentItem_Title {
-    font-size: 1.1rem;
-    margin: 5px 0;
-    font-weight: bold;
+.RecentItem_Paragraph .RecentItem_Title {
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    margin: 0;
+    word-wrap: break-word;
+  }
+  
+  .RecentItem_Paragraph .RecentItem_Summary {
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    word-wrap: break-word;
+  }
+.RecentItem_Paragraph {
+  overflow: auto; /* 넘치면 스크롤 생기게 하거나 */
+  word-break: break-word; /* 줄바꿈 유도 */
 }
+  
 
-.RecentItem_Summary {
-    font-size: 0.9rem;
-    color: #eee;
-}
 
 .contentswrite {
     white-space: pre-wrap; /* 줄바꿈과 공백을 유지 */

@@ -1,0 +1,171 @@
+/* 기본 다크 모드 스타일 */
+body {
+    font-family: 'font', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(124, 123, 122);
+    color: white;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/wall3.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+
+/* 폰트 */
+@font-face {
+    font-family: 'font';
+    src: url('Hakgyoansim Badasseugi TTF B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------헤더 -----------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);  /* 흰색 배경, 20% 투명도 */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;  /* 왼쪽에서 시작 */
+    width: 100%;  /* 전체 너비 */
+    z-index: 1000;
+    box-sizing: border-box;  /* 패딩을 너비에 포함 */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),  /* 외부 그림자 */
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);  /* 내부 하이라이트 */
+    border-radius: 30px 30px 30px 30px;  /* 모든 모서리를 둥글게 */
+    transition: top 0.3s ease-in-out;
+}
+
+.header-left{
+    display: flex; /* 요소들을 가로로 나열 */
+    align-items: center; /* 수직 정렬: 가운데 정렬 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    font-size: 15px; /* 글자 크기 */
+
+}
+
+.header-right {
+    display: flex; /* 버튼들을 가로로 나열 */
+    align-items: center; /* 수직 정렬 */
+}
+
+.github-icon{
+    width: 35px;
+}
+.instagram-icon{
+    width: 38px;
+}
+
+
+.home-buton {
+    text-decoration: none; /* 밑줄 제거 */
+    color: white;          /* 글자 색상 */
+    font-size: 1.6rem;     /* 글자 크기 */
+    font-weight: bold;     /* 굵기 */
+}
+.home-buton:hover {
+    color: #c2cfdd;        /* 마우스 오버 시 색상 변경 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------본문 ----------------------------------- */
+
+main {
+    padding-top: 250px; /* 헤더 높이(60px) + 여유 공간 */
+  }
+
+.BlogBox {
+    max-width: 800px;       /* 최대 너비 제한 */
+    width: 100%;            /* 화면 줄어들면 같이 줄어듬 */
+    margin: 20px auto;      /* 가운데 정렬 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.BlogBox:hover {
+    transform: scale(1.02);
+}
+
+.blog-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-bottom: 10px;
+}
+
+.blog-writting {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    color: #eee;
+    white-space: pre-line;
+}
+
+* {
+  box-sizing: border-box;  /* padding, border 포함해서 width 계산 */
+}
+
+body, html {
+  overflow-x: hidden;      /* 가로 스크롤 방지 */
+}
+
+
+  
+
+
+
+
+
+
+/* ---------------------------------하단 -----------------------*/
+footer {
+    
+    width: 100%; /* 전체 너비 */
+    margin-top: 1000px; /* 위쪽 여백 */
+    text-align: center; /* 중앙 정렬 */
+}
+  
+.secret-button {
+    display: inline-block;
+    opacity: 0;
+    /* 버튼은 특별한 위치 설정 없이 문서 흐름에 따라 왼쪽에 위치 */
+}
+  
+.footer-text {
+    white-space: nowrap;           /* 텍스트가 한 줄로 유지되도록 */
+}

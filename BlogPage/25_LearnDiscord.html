@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geffi</title>
+    <link rel="icon" href="image\Geffi_Profile_Round.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style_BlogPage.css">  <!-- CSS 연결 -->
+</head>
+
+
+
+
+<body>
+
+    <header>
+      <div class="header-left">
+        <a href="../index.html" class="home-buton">Geffi</a>
+      </div>
+
+        <div class="header-right">
+            <a href="https://github.com/Blunf" target="_blank" class="github-button">
+                <img src="../icon/Icon_Github.svg" alt="깃허브" class="github-icon">
+            </a>
+            <a href="https://www.instagram.com/geffi_kr" target="_blank" class="instagram-button">
+                <img src="../icon/Icon_Instagram.svg" alt="인스타그램" class="instagram-icon">
+            </a>
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        
+      <div class="BlogBox">
+        <h2 class="blog-title">디스코드 알아보기</h2>
+        <p class="blog-writting">
+          디스코드가 무엇인지 알아보고, 어떻게 사용하는지 정리한 글입니다.
+          다양한 기능과 활용법을 설명합니다.
+        </p>
+      </div>
+      
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <a href="MySecretPage.html" class="secret-button">
+            <img src="icon\icon_Secret.svg">
+        </a>
+
+        <p class="footer-text">&copy; 2025 Geffi Journal. All rights reserved.</p>
+      </footer>
+    
+
+ 
+    
+</body>
+
+
+
+
+
+<script>
+  let prevScrollPos = window.scrollY;
+  const header = document.querySelector("header");
+  
+  window.addEventListener("scroll", () => {
+    const currentScrollPos = window.scrollY;
+  
+    if (currentScrollPos > prevScrollPos && currentScrollPos > 100) {
+      // 아래로 스크롤 시 헤더 숨기기
+      header.style.top = "-80px"; // 헤더 높이보다 크게
+    } else {
+      // 위로 스크롤 시 다시 보이기
+      header.style.top = "0";
+    }
+  
+    prevScrollPos = currentScrollPos;
+  });
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
