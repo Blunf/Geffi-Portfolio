@@ -235,9 +235,9 @@ body, html {
   
   @media (max-width: 768px) { 
     .blog-thumbnail{
-        max-width: 350px;
+        max-width: 160px; /* 이 값을 줄이거나 늘려 원하는 크기로 설정 */
     }
-}
+  }
 
 
 
