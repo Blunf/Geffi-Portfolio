@@ -176,8 +176,7 @@ main {
 .blog-writting h2 {
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 20px;
     color: #ffffff;
 }
 
@@ -203,7 +202,6 @@ body, html {
 .blog-toc {
     max-width: 800px;
     margin: 0 auto 20px auto;
-    padding: 10px;
     background-color: rgba(255, 255, 255, 0);
   }
   
@@ -223,10 +221,10 @@ body, html {
   .blog-toc a {
     color: white;
     background-color: rgba(255, 255, 255, 0);
-    padding: 8px 14px;
+    padding: 8px 8px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     transition: background-color 0.2s ease;
   }
   
@@ -235,7 +233,11 @@ body, html {
   }
   
   
-
+  @media (max-width: 768px) { 
+    .blog-insertedimage{
+        max-width: 350px;
+    }
+}
 
 
 
