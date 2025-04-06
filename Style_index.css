@@ -155,7 +155,6 @@ header {
 .RecentItem_Img img {
     width: auto;
     height: 100%;
-    max-width: 100%; /* 💡 가로 너비 제한 추가 */
     object-fit: cover;
     border-radius: 20px;
 }
