@@ -24,7 +24,7 @@ body::before {
 /* 폰트 */
 @font-face {
     font-family: 'font';
-    src: url('Hakgyoansim Badasseugi TTF B.ttf') format('truetype');
+    src: url('../Hakgyoansim\ Badasseugi\ TTF\ B.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
