@@ -25,6 +25,7 @@
     <header>
       <div class="header-left">
         <a href="../index.html" class="home-buton">Geffi</a>
+        <a href="Gallery.html" class="gotomygallerypage">go Gallery</a>
       </div>
 
         <div class="header-right">
@@ -34,6 +35,11 @@
             <a href="https://www.instagram.com/geffi_kr" target="_blank" class="instagram-button">
                 <img src="icon/Icon_Instagram.svg" alt="인스타그램" class="instagram-icon">
             </a>
+            <button id="themeToggle" class="WallpaperBtn">
+              <img src="https://img.icons8.com/ios-filled/50/f9f9f9/sun.png" alt="theme-toggle-icon" id="themeIcon">
+            </button>
+            
+            
         </div>
 
 
@@ -60,6 +66,7 @@
           <button onclick="filterBlogs('all')">전체</button>
           <button onclick="filterBlogs('블로그')">블로그</button>
           <button onclick="filterBlogs('저널')">저널</button>
+          <button onclick="filterBlogs('저널')">갤러리</button>
         </div>        
         <div class="BlogBoard">
 
@@ -70,7 +77,7 @@
             <div class="RecentItem_Paragraph">
               <small class="RecentItem_Category">블로그/비즈니스</small>
               <h3 class="RecentItem_Title">디스코드 알아보기</h3>
-              <p class="RecentItem_Summary">디스코드의 성장 과정 알아보기</p>
+              <p class="RecentItem_Summary">디스코드의 창업 이야기</p>
             </div>
           </a>
           <a href="YourPage.html" class="RecentItem">
@@ -230,7 +237,22 @@ window.addEventListener('scroll', () => {
   </script>
   
 
-
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const bodyBefore = document.querySelector('body::before'); // ❌ 실제 DOM은 아님
+    let isDark = false;
+  
+    // ::before는 JS로 직접 접근 안 됨 → body에 class로 다크/라이트 전환
+    themeToggle.addEventListener('click', () => {
+      isDark = !isDark;
+      document.body.classList.toggle('darkmode', isDark);
+      themeIcon.src = isDark
+        ? 'https://img.icons8.com/ios-filled/50/f9f9f9/moon-symbol.png'
+        : 'https://img.icons8.com/ios-filled/50/f9f9f9/sun.png';
+    });
+  </script>
+  
 
 
 
