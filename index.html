@@ -18,6 +18,7 @@
 </head>
 
 
+<script src="indexJS.js"></script>
 
 
 <body>
@@ -178,91 +179,6 @@
  
     
 </body>
-<script>
-  let prevScrollPos = window.scrollY;
-  const header = document.querySelector("header");
-  
-  window.addEventListener("scroll", () => {
-    const currentScrollPos = window.scrollY;
-  
-    if (currentScrollPos > prevScrollPos && currentScrollPos > 100) {
-      header.style.top = "-80px";
-    } else {
-      header.style.top = "0";
-    }
-  
-    prevScrollPos = currentScrollPos;
-  });
-
-  function filterBlogs(category) {
-    const blogItems = document.querySelectorAll('.RecentItem');
-    const buttons = document.querySelectorAll('.category-buttons button');
-  
-    // 모든 버튼에서 active 제거
-    buttons.forEach(btn => btn.classList.remove('active'));
-  
-    // 클릭한 버튼에만 active 추가
-    const clickedButton = Array.from(buttons).find(btn => btn.innerText.includes(category) || (category === 'all' && btn.innerText === '전체'));
-    if (clickedButton) clickedButton.classList.add('active');
-  
-    // 글 필터링
-    blogItems.forEach(item => {
-      const itemCategory = item.querySelector('.RecentItem_Category').innerText;
-  
-      if (category === 'all' || itemCategory.includes(category)) {
-        item.style.display = '';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-
-  // 부드럽게 위로 올라가기
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// 스크롤하면 버튼 보이게 하기
-window.addEventListener('scroll', () => {
-  const topBtn = document.getElementById('topBtn');
-  if (window.scrollY > 300) {
-    topBtn.style.display = 'block';
-  } else {
-    topBtn.style.display = 'none';
-  }
-});
-
-  
-  
-  </script>
-  
-
-  <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const bodyBefore = document.querySelector('body::before'); // ❌ 실제 DOM은 아님
-    let isDark = false;
-  
-    // ::before는 JS로 직접 접근 안 됨 → body에 class로 다크/라이트 전환
-    themeToggle.addEventListener('click', () => {
-      isDark = !isDark;
-      document.body.classList.toggle('darkmode', isDark);
-      themeIcon.src = isDark
-        ? 'https://img.icons8.com/ios-filled/50/f9f9f9/moon-symbol.png'
-        : 'https://img.icons8.com/ios-filled/50/f9f9f9/sun.png';
-    });
-  </script>
-  
-
-
-
-
-
-
-
-
-
-
 
 
 

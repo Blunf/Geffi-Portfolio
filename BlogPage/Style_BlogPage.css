@@ -265,3 +265,28 @@ footer {
 .footer-text {
     white-space: nowrap;           /* 텍스트가 한 줄로 유지되도록 */
 }
+
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  #topBtn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+  }
