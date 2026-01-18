@@ -1,0 +1,86 @@
+﻿footer {
+	text-align: center;
+	color: #888;
+	font-size: 0.95rem;
+	margin: 500px 0 20px 0;
+	border-top: 1.3px solid #000;
+	padding-top: 18px;
+}
+
+footer a {
+	color: #4663c2;
+	text-decoration: none;
+	margin: 0 4px;
+	font-weight: 500;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+.linktree_div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	margin-top: 30px;
+    
+}
+.linktree {
+	color: #4663c2;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+main a {
+	color: #2d2d2d;
+	font-size: 1.1rem;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: 10px;
+	transition: color 0.2s;
+}
+
+main a:hover {
+	color: #0077ff;
+	text-decoration: none;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+main p {
+	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 20px;
+}
+
+@font-face {
+	font-family: 'Hakgyoansim Badasseugi';
+	src: url('./Hakgyoansim Badasseugi TTF B.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Hakgyoansim Badasseugi', 'Noto Sans KR', sans-serif;
+	background-color: #f2f2f2;
+}
+header {
+	border: none;
+	border-bottom: 1.3px solid #000;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+}
+
+header h1 {
+	text-align: center;
+	margin: 0;
+}
