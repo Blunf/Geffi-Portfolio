@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #f2f2f2;
+	background-color: #363636;
 }
 
 /* Side Navigation */
@@ -105,16 +105,29 @@ header h1 {
 }
 
 
-main img {
-    width: 100%;
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
+    margin-top: 1000px;
 	text-align: center;
 	padding: 20px;
-	background-color: #f2f2f2;
-	color: #666;
+	background-color: transparent;
+	color: #f2f2f2;
 	font-size: 0.9rem;
 }
