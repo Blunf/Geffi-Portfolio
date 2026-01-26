@@ -1,9 +1,4 @@
-body {
-    background-image: url('image/wall_test_dark.png');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
+
 @font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
@@ -13,7 +8,7 @@ body {
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    background-color: #e6e6e6;
+    background-color: #1d1d1d;
 }
 
 
@@ -136,7 +131,7 @@ header h1 {
   max-width: 400px; /* 최대 너비 400px로 제한 */
   width: 100%; /* flex-basis에 맞춰 100%로 채움 */
   height: auto; /* 이미지 비율 유지하며 높이 자동 조정 */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2); /* 그림자 효과 */
   border-radius: 8px; /* 모서리를 둥글게 */
 }
 

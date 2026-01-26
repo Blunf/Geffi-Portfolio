@@ -1,7 +1,7 @@
 ﻿body {
     background-image: url('image/wall_test.png');
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 @font-face {
@@ -133,50 +133,8 @@ header h1 {
 
 
 main {
-    position: relative; /* footer 위치의 기준점 */
-}
-
-
-
-
-.web_intro {
-    width: 80vw;
-    max-width: 500px;
-    margin: 100px auto 0 auto;
-    background: #ffffff2d;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 32px 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-}
-
-.intro_profile {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  object-fit: cover;
-}
-
-.intro_info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.intro_row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.1rem;
-  color: #222;
-}
-
-.intro_icon {
-  font-size: 1.2rem;
+    margin-top: 80px; /* 헤더 높이만큼 여백 추가 */
+    padding: 20px;
 }
 
 
@@ -201,7 +159,7 @@ main {
 
 
 footer {
-    margin-top: 1000px;
+    margin-top: 1400px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
