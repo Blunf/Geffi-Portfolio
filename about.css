@@ -13,7 +13,8 @@ body {
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #f2f2f2;
+	background-color: #e6e6e6;
+	margin: 0;
 }
 
 .side-nav {
@@ -27,11 +28,11 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    transform: translateX(-250px); /* ó������ ȭ�� ���ʿ� ���� */
+    transform: translateX(-250px); /* 화면 밖으로 숨김 */
 }
 
 .side-nav.open {
-    transform: translateX(0); /* open Ŭ������ �߰��Ǹ� ���̵��� ���� */
+    transform: translateX(0); /* open 클래스가 추가되면 이동하여 보임 */
 }
 
 .side-nav a {
@@ -118,7 +119,7 @@ header h1 {
 
 main {
     position: relative; /* footer 위치를 위해 */
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 main a {
