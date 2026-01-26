@@ -1,4 +1,10 @@
-﻿@font-face {
+﻿body {
+    background-image: url('image/wall_test.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+@font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
 	font-weight: normal;
@@ -7,7 +13,7 @@
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #363636;
+    background-color: #e6e6e6;
 	margin: 0;
 }
 
@@ -80,7 +86,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* 상하 패딩 추가 */
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
     z-index: 100; /* 다른 요소들보다 뒤에 위치 */
 }
 
@@ -129,36 +135,49 @@ header h1 {
 main {
     position: relative; /* footer 위치의 기준점 */
 }
-main img {
+
+
+
+
+.web_intro {
     width: 100%;
-    display: block;
-}
-/* 이미지 컨테이너 스타일 */
-.index_blender, .index_ue5, .index_nomad {
-    position: relative; /* 자식 요소를 절대 위치로 지정하기 위한 기준점 */
-    width: 100%;
-}
-
-/* 이미지 위 텍스트 스타일 */
-.image-text {
-    position: absolute; /* 부모 요소(.index_blender 등)를 기준으로 위치 지정 */
-    bottom: 10px; /* 아래쪽에서 10px 떨어진 곳에 배치 */
-    left: 10px; /* 왼쪽에서 10px 떨어진 곳에 배치 */
-    color: #f2f2f2; /* 글자색 */
-    background-color: rgba(0, 0, 0, 0); /* 가독성을 위한 반투명 배경 */
-    padding: 5px 10px; /* 텍스트 주변 여백 */
-    
-    /* 반응형 폰트 크기 설정 */
-    font-size: 10vw; /* 뷰포트 너비의 2% 크기. 화면이 작아지면 글자도 작아짐 */
+    max-width: 500px;
+    margin: 100px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
 }
 
-/* 모바일 화면 등 작은 화면을 위한 미디어 쿼리 */
-@media (min-width: 768px) {
-    .image-text {
-        font-size: 4rem; /* 화면이 일정 크기 이상일 때 최대 글자 크기 고정 */
-    }
+.intro_profile {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  object-fit: cover;
 }
 
+.intro_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intro_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.intro_icon {
+  font-size: 1.2rem;
+}
 
 
 
@@ -182,13 +201,10 @@ main img {
 
 
 footer {
-    position: absolute; /* main을 기준으로 절대 위치 */
-    bottom: 0;          /* main의 맨 아래에 배치 */
-    width: 100%;        /* 너비 100% */
-    box-sizing: border-box; /* 패딩을 너비에 포함 */
-    text-align: center;
-    padding: 20px;
-    background-color: transparent;
-    color: #f2f2f2;
-    font-size: 30%;
+    margin-top: 200px;
+	text-align: center;
+	padding: 20px;
+	background-color: transparent;
+	color: #000000;
+	font-size: 60%;
 }

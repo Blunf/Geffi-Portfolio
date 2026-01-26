@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
@@ -7,7 +8,7 @@
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #363636;
+	background-color: #e6e6e6;
 }
 
 /* Side Navigation */
@@ -17,16 +18,16 @@ body {
     position: fixed;
     z-index: 200;
     top: 0;
-    left: 0;
+    left: 0;    
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    transform: translateX(-250px); /* Ã³À½¿¡´Â È­¸é ¿ÞÂÊ¿¡ ¼û±è */
+    transform: translateX(-250px); /* Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ê¿ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 }
 
 .side-nav.open {
-    transform: translateX(0); /* open Å¬·¡½º°¡ Ãß°¡µÇ¸é º¸ÀÌµµ·Ï ¼³Á¤ */
+    transform: translateX(0); /* open Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 }
 
 .side-nav a {
@@ -61,17 +62,17 @@ body {
 
 header {
     border: none;
-    width: 100%; /* 100vw ´ë½Å 100% »ç¿ë */
-    position: fixed; /* relative¿¡¼­ fixed·Î º¯°æ */
-    top: 0; /* »ó´Ü¿¡ °íÁ¤ */
-    left: 0; /* ÁÂÃø¿¡ °íÁ¤ */
+    width: 100%; /* 100vw ï¿½ï¿½ï¿½ 100% ï¿½ï¿½ï¿½ */
+    position: fixed; /* relativeï¿½ï¿½ï¿½ï¿½ fixedï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    top: 0; /* ï¿½ï¿½Ü¿ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    left: 0; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* »óÇÏ ÆÐµù Ãß°¡ */
-    background-color: transparent;
-    z-index: 100; /* ´Ù¸¥ ¿ä¼Òµéº¸´Ù µÚ¿¡ À§Ä¡ */
+    padding: 10px 20px; /* ï¿½ï¿½ï¿½ï¿½ ï¿½Ðµï¿½ ï¿½ß°ï¿½ */
+    background-color: rgba(0, 0, 0, 0.6); /* ë°˜íˆ¬ëª… ê²€ì • */
+    z-index: 100; /* ï¿½Ù¸ï¿½ ï¿½ï¿½Òµéº¸ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½Ä¡ */
 }
 
 .header-left {
@@ -108,8 +109,33 @@ header h1 {
 
 
 
+body, main, .video_site, .video_site video {
+  margin: 0;
+  padding: 0;
+}
 
+.video_site {
+  width: 100vw;
+  overflow-x: hidden;
+}
 
+.video_site video {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: block;
+  object-fit: cover;
+}
+
+.exp_site {
+    width: 100vw;
+    margin: 0;
+    padding: 32px 0 0 0;
+    color: #1f1f1f;
+    background: rgb(171, 201, 230);
+    border-radius: 0;
+    box-shadow: none;
+}
 
 
 
@@ -124,10 +150,10 @@ header h1 {
 
 
 footer {
-    margin-top: 1000px;
+    margin-top: 100px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
-	color: #f2f2f2;
-	font-size: 0.9rem;
+	color: #000000;
+	font-size: 60%;
 }

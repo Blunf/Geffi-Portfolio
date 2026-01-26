@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #363636;
+	background-color: #e6e6e6;
 }
 
 /* Side Navigation */
@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; /* ���� �е� �߰� */
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
     z-index: 100; /* �ٸ� ��ҵ麸�� �ڿ� ��ġ */
 }
 
@@ -113,7 +113,7 @@ header h1 {
 
 main {
     position: relative; /* footer ��ġ�� ������ */
-    margin-top: 1000px;
+    margin-top: 500px;
 }
 
 main a {
@@ -124,10 +124,10 @@ main a {
     margin: 20px auto 0 auto; /* ��� ������ 20px�� ���� */
     padding: 10px 20px;
     background-color: transparent;
-    color: #f2f2f2;
+    color: #181818;
     text-decoration: none;
     font-size: 1.2rem;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #181818;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -139,11 +139,14 @@ main a {
 
 
 
+
+
+
 footer {
-    margin-top: 100px;
+    margin-top: 200px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
-	color: #f2f2f2;
-	font-size: 30%;
+	color: #000000;
+	font-size: 60%;
 }
