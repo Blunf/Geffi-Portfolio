@@ -1,1 +1,6 @@
-link : https://kr-geffi.vercel.app
+link : https://geffi.co.kr
+
+git status
+git add . 
+git commit -m 'faarr'
+git push

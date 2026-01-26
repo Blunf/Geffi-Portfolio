@@ -22,11 +22,11 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    transform: translateX(-250px); /* Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ê¿ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    transform: translateX(-250px); /* Ã³À½¿¡´Â È­¸é ¿ÞÂÊ¿¡ ¼û±è */
 }
 
 .side-nav.open {
-    transform: translateX(0); /* open Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    transform: translateX(0); /* open Å¬·¡½º°¡ Ãß°¡µÇ¸é º¸ÀÌµµ·Ï ¼³Á¤ */
 }
 
 .side-nav a {
@@ -61,17 +61,17 @@ body {
 
 header {
     border: none;
-    width: 100%; /* 100vw ï¿½ï¿½ï¿½ 100% ï¿½ï¿½ï¿½ */
-    position: fixed; /* relativeï¿½ï¿½ï¿½ï¿½ fixedï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
-    top: 0; /* ï¿½ï¿½Ü¿ï¿½ ï¿½ï¿½ï¿½ï¿½ */
-    left: 0; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+    width: 100%; /* 100vw ´ë½Å 100% »ç¿ë */
+    position: fixed; /* relative¿¡¼­ fixed·Î º¯°æ */
+    top: 0; /* »ó´Ü¿¡ °íÁ¤ */
+    left: 0; /* ÁÂÃø¿¡ °íÁ¤ */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* ï¿½ï¿½ï¿½ï¿½ ï¿½Ðµï¿½ ï¿½ß°ï¿½ */
+    padding: 10px 20px; /* »óÇÏ ÆÐµù Ãß°¡ */
     background-color: transparent;
-    z-index: 100; /* ï¿½Ù¸ï¿½ ï¿½ï¿½Òµéº¸ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½Ä¡ */
+    z-index: 100; /* ´Ù¸¥ ¿ä¼Òµéº¸´Ù µÚ¿¡ À§Ä¡ */
 }
 
 .header-left {
@@ -111,26 +111,10 @@ header h1 {
 
 
 
-main {
-    position: relative; /* footer ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-    margin-top: 1000px;
-}
 
-main a {
-    display: block;
-    /* width: fit-content; ï¿½ï¿½ï¿½ï¿½ */
-    max-width: 200px; /* ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Ö¼ï¿½ 100pxï¿½ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) */
-    text-align: center; /* ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½îµ¥ ï¿½ï¿½ï¿½ï¿½ */
-    margin: 20px auto 0 auto; /* ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 20pxï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border: 2px solid #f2f2f2;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
+
+
+
 
 
 
@@ -140,10 +124,10 @@ main a {
 
 
 footer {
-    margin-top: 100px;
+    margin-top: 1000px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
 	color: #f2f2f2;
-	font-size: 30%;
+	font-size: 0.9rem;
 }

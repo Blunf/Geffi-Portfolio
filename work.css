@@ -22,11 +22,11 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    transform: translateX(-250px); /* ó������ ȭ�� ���ʿ� ���� */
+    transform: translateX(-250px); /* ó������ ȭ�� ���ʿ� ���� */
 }
 
 .side-nav.open {
-    transform: translateX(0); /* open Ŭ������ �߰��Ǹ� ���̵��� ���� */
+    transform: translateX(0); /* open Ŭ������ �߰��Ǹ� ���̵��� ���� */
 }
 
 .side-nav a {
@@ -61,17 +61,17 @@ body {
 
 header {
     border: none;
-    width: 100%; /* 100vw ��� 100% ��� */
-    position: fixed; /* relative���� fixed�� ���� */
-    top: 0; /* ��ܿ� ���� */
-    left: 0; /* ������ ���� */
+    width: 100%; /* 100vw ��� 100% ��� */
+    position: fixed; /* relative���� fixed�� ���� */
+    top: 0; /* ��ܿ� ���� */
+    left: 0; /* ������ ���� */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* ���� �е� �߰� */
-    background-color: transparent;
-    z-index: 100; /* �ٸ� ��ҵ麸�� �ڿ� ��ġ */
+    padding: 10px 20px; /* ���� �е� �߰� */
+    background-color: #363636;
+    z-index: 100; /* �ٸ� ��ҵ麸�� �ڿ� ��ġ */
 }
 
 .header-left {
@@ -111,7 +111,33 @@ header h1 {
 
 
 
+.gallery {
+  display: flex; /* 갤러리 컨테이너를 flexbox로 만듦 (가로 정렬) */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; /* 최대 너비 1000px로 제한 */
+  flex-wrap: wrap; /* 줄이 넘치면 다음 줄로 자동 이동 */
+  gap: 16px; /* 이미지 사이의 간격을 16px로 설정 */
+  justify-content: center; /* 이미지를 가로 중앙 정렬 */
+  margin-top: 80px; /* 위쪽에 80px 여백(헤더 아래 공간 확보) */
+}
 
+.gallery img {
+  flex: 0 0 calc(50% - 16px); /* 한 줄에 2개씩, 각 이미지의 너비를 50% - 16px로 고정 */
+  max-width: 400px; /* 최대 너비 400px로 제한 */
+  width: 100%; /* flex-basis에 맞춰 100%로 채움 */
+  height: auto; /* 이미지 비율 유지하며 높이 자동 조정 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+  border-radius: 8px; /* 모서리를 둥글게 */
+}
+
+@media (max-width: 600px) {
+  .gallery img {
+    flex: 0 0 100%; /* 모바일에서는 한 줄에 1개(100% 너비) */
+    max-width: 100%; /* 최대 너비 100%로 제한 */
+    width: 100%; /* 부모(.gallery)의 너비를 꽉 채움 */
+  }
+}
 
 
 
@@ -124,10 +150,9 @@ header h1 {
 
 
 footer {
-    margin-top: 1000px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
 	color: #f2f2f2;
-	font-size: 0.9rem;
+	font-size: 30%;
 }
