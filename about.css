@@ -1,3 +1,9 @@
+body {
+    background-image: url('image/wall_test_dark.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 @font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
@@ -124,10 +130,10 @@ main a {
     margin: 20px auto 0 auto; /* ��� ������ 20px�� ���� */
     padding: 10px 20px;
     background-color: transparent;
-    color: #181818;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
-    border: 2px solid #181818;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -143,10 +149,10 @@ main a {
 
 
 footer {
-    margin-top: 200px;
+    margin-top: 500px;
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
-	color: #000000;
+	color: #ffffff;
 	font-size: 60%;
 }

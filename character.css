@@ -1,4 +1,9 @@
-
+body {
+    background-image: url('image/wall_test_dark.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 @font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
@@ -154,6 +159,6 @@ footer {
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
-	color: #000000;
+	color: #ffffff;
 	font-size: 60%;
 }

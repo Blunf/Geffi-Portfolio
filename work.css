@@ -1,3 +1,9 @@
+body {
+    background-image: url('image/wall_test_dark.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 @font-face {
 	font-family: 'Pretendard';
 	src: url('./fonts/PretendardVariable.ttf') format('truetype');
@@ -7,8 +13,10 @@
 
 body {
 	font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-	background-color: #e6e6e6;
+    background-color: #e6e6e6;
+	margin: 0;
 }
+
 
 /* Side Navigation */
 .side-nav {
@@ -22,11 +30,11 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    transform: translateX(-250px); /* ó������ ȭ�� ���ʿ� ���� */
+    transform: translateX(-250px); /* 처음에는 화면 왼쪽에 숨김 */
 }
 
 .side-nav.open {
-    transform: translateX(0); /* open Ŭ������ �߰��Ǹ� ���̵��� ���� */
+    transform: translateX(0); /* open 클래스가 추가되면 보이도록 설정 */
 }
 
 .side-nav a {
@@ -155,6 +163,6 @@ footer {
 	text-align: center;
 	padding: 20px;
 	background-color: transparent;
-	color: #000000;
+	color: #ffffff;
 	font-size: 60%;
 }
