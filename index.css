@@ -85,26 +85,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* 상하 패딩 추가 */
-    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
+    padding: 30px 20px; /* 상하 패딩 추가 */
+    background-color: #ffffff; /* 반투명 검정 */
     z-index: 100; /* 다른 요소들보다 뒤에 위치 */
 }
 
-.header-left {
-    flex: 1;
+.header-left span,
+.header-right img {
+  height: 40px;         /* 원하는 동일 높이로 지정 */
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
 }
 
-.header-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header-center img {
+  height: 60px; /* 로고만 더 크게 */
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
 }
 
-.header-center {
-	flex: 2;
-	text-align: center;
-	color: #f2f2f2;
+.header-left span {
+  font-size: 40px;      /* 아이콘 크기도 맞춰줌 */
 }
 
 .menu-btn {
@@ -112,16 +114,8 @@ header {
 	border: none;
 	font-size: 2rem;
 	cursor: pointer;
-	color: #f2f2f2;
+	color: #000000;
 }
-
-header h1 {
-	text-align: center;
-	margin: 0;
-}
-
-
-
 
 
 

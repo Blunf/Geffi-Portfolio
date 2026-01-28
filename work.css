@@ -60,39 +60,38 @@ body {
 
 
 
-
 header {
     border: none;
-    width: 100%; /* 100vw ��� 100% ��� */
-    position: fixed; /* relative���� fixed�� ���� */
-    top: 0; /* ��ܿ� ���� */
-    left: 0; /* ������ ���� */
+    width: 100%; /* 100vw 대신 100% 사용 */
+    position: fixed; /* relative에서 fixed로 변경 */
+    top: 0; /* 상단에 고정 */
+    left: 0; /* 좌측에 고정 */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* ���� �е� �߰� */
-    background-color: #363636;
-    z-index: 100; /* �ٸ� ��ҵ麸�� �ڿ� ��ġ */
-    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
-
+    padding: 10px 10px; /* 상하 패딩 추가 */
+    background-color: #ffffff; /* 반투명 검정 */
+    z-index: 100; /* 다른 요소들보다 뒤에 위치 */
 }
 
-.header-left {
-    flex: 1;
+.header-left span,
+.header-right img {
+  height: 40px;         /* 원하는 동일 높이로 지정 */
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
 }
 
-.header-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header-center img {
+  height: 60px; /* 로고만 더 크게 */
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
 }
 
-.header-center {
-	flex: 2;
-	text-align: center;
-	color: #f2f2f2;
+.header-left span {
+  font-size: 40px;      /* 아이콘 크기도 맞춰줌 */
 }
 
 .menu-btn {
@@ -100,12 +99,7 @@ header {
 	border: none;
 	font-size: 2rem;
 	cursor: pointer;
-	color: #f2f2f2;
-}
-
-header h1 {
-	text-align: center;
-	margin: 0;
+	color: #000000;
 }
 
 
@@ -123,7 +117,7 @@ header h1 {
   flex-wrap: wrap; /* 줄이 넘치면 다음 줄로 자동 이동 */
   gap: 16px; /* 이미지 사이의 간격을 16px로 설정 */
   justify-content: center; /* 이미지를 가로 중앙 정렬 */
-  margin-top: 80px; /* 위쪽에 80px 여백(헤더 아래 공간 확보) */
+  margin-top: 120px; /* 위쪽에 80px 여백(헤더 아래 공간 확보) */
 }
 
 .gallery img {
@@ -131,8 +125,6 @@ header h1 {
   max-width: 400px; /* 최대 너비 400px로 제한 */
   width: 100%; /* flex-basis에 맞춰 100%로 채움 */
   height: auto; /* 이미지 비율 유지하며 높이 자동 조정 */
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2); /* 그림자 효과 */
-  border-radius: 8px; /* 모서리를 둥글게 */
 }
 
 @media (max-width: 600px) {
